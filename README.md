@@ -1,6 +1,7 @@
-# WSI_lab_4
+Solving classical Enstein's Riddle using Prolog. 
 
-Solving classical Enstein's Riddle using Prolog
+To run SWI-Prolog or SWISH is necessary.
+SWISH (on-line tool): https://swish.swi-prolog.org/
+SWI-Prolog (download): https://www.swi-prolog.org/
 
-Start: 08.04.2021   
-Deadline: 15.04.2021
+Coded for WSI course in Spring '21 semester. 
