@@ -23,41 +23,41 @@ einstein_riddle(Street, FishOwner, WaterDrinker) :-
 
 
     /* coded conditions */
-    /* 				Nationality 	Colour 		Pet 		Drink 		Smoke 		*/
-    member(house(_, british,		red,		_,			_,			_			), Street),
-    member(house(_, swedish,		_,			dogs,		_,			_			), Street),
-    member(house(_, danish,			_,			_,      	tea,		_ 			), Street),
-    member(house(_, _,				green,		_,      	coffee,		_			), Street),
-    member(house(_, _,				_,			birds,  	_,			no_filter	), Street),
-    member(house(_, _,				yellow,		_,      	_,          cigar     	), Street),
-    member(house(_, _,				_,			_,      	beer,		mentol		), Street),
-    member(house(_, german,			_,			_,      	_,			pipe		), Street),
+    /* 			Nationality 	Colour 		Pet 		Drink 		Smoke 		*/
+    member(house(_, 	british,	red,		_,		_,		_		), Street),
+    member(house(_, 	swedish,	_,		dogs,		_,		_		), Street),
+    member(house(_, 	danish,		_,		_,      	tea,		_ 		), Street),
+    member(house(_,	_,		green,		_,      	coffee,		_		), Street),
+    member(house(_, 	_,		_,		birds,  	_,		no_filter	), Street),
+    member(house(_, 	_,		yellow,		_,      	_,         	cigar     	), Street),
+    member(house(_, 	_,		_,		_,      	beer,		mentol		), Street),
+    member(house(_, 	german,		_,		_,      	_,		pipe		), Street),
 
     /* spatial conditions */
-    member(house(3, _,				_,			_,      	milk,       _			), Street),
-    member(house(1, norwegian,		_,			_,      	_,          _ 			), Street),
+    member(house(3, 	_,		_,		_,      	milk,       	_		), Street),
+    member(house(1, 	norwegian,	_,		_,      	_,          	_ 		), Street),
 
-    member(house(A, _,				green,		_,      	_,			_ 			), Street),
-    member(house(B, _,				white,		_,      	_,          _			), Street),
-    left_of(A, B),
+    member(house(A, 	_,		green,		_,      	_,		_ 		), Street),
+    member(house(B, 	_,		white,		_,      	_,          	_		), Street),
+    left_of(A, B),	
 
-    member(house(C, _,				_,			_,      	_,          light 		), Street),
-    member(house(D, _,				_,			cats,   	_,          _			), Street),
+    member(house(C, 	_,		_,		_,      	_,          	light 		), Street),
+    member(house(D, 	_,		_,		cats,   	_,          	_		), Street),
     next_to(C, D),
 
-    member(house(E, _,				_,			horses,  	_,          _			), Street),
-    member(house(F, _,				_,			_,      	_,          cigar	 	), Street),
+    member(house(E, 	_,		_,		horses,  	_,          	_		), Street),
+    member(house(F, 	_,		_,		_,      	_,          	cigar	 	), Street),
     next_to(E, F),
 
-    member(house(G, norwegian,		_,			_,      	_,			_			), Street),
-    member(house(H, _,				blue,		_,      	_,			_			), Street),
+    member(house(G, 	norwegian,	_,		_,      	_,		_		), Street),
+    member(house(H, 	_,		blue,		_,      	_,		_		), Street),
     next_to(G, H),
 
-    member(house(I, _,				_,			_,      	_,			light		), Street),
-  	member(house(J, _,				_,			_,			water, 		_ 			), Street),
+    member(house(I, 	_,		_,		_,      	_,		light		), Street),
+    member(house(J, 	_,		_,		_,		water, 		_ 		), Street),
     next_to(I, J),
 
 
     /* unkown variables */
-    member(house(_, FishOwner,		_,			fish,  		_,  		_			), Street),
-    member(house(_, WaterDrinker,	_,			_,			water,		_			), Street).
+    member(house(_, 	FishOwner,	_,		fish,  		_,  		_		), Street),
+    member(house(_, 	WaterDrinker,	_,		_,		water,		_		), Street).
